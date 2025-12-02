@@ -4,7 +4,7 @@ Documentation complète de mon homelab privé.
 
 > **Disclaimer de sécurité**
 > - Ce repository est **PUBLIC** et sert uniquement de documentation
-> - Les IPs, domaines et informations jugées sensibles ont été **anonymisés**
+> - Les IPs, domaines et informations jugées sensibles ont été **anonymisées**
 > - **Zéro exposition Internet**
 
 ---
@@ -24,6 +24,7 @@ Documentation complète de mon homelab privé.
 - **Accès via VPN uniquement** : VPN privé et chiffré entre mes appareils et mes VM
 - **Infrastructure as Code** : Docker Compose pour tout les services
 - **Monitoring complet** : Uptime Kuma pour la partie alerting
+- **Couche MFA** : Avoir une couche de MFA à minima pour accéder à un outil
 
 ---
 
@@ -48,7 +49,7 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 **Proxmox VE - Hyperviseur**
 
 **Machine virtuelle :**
-- **OS** : Debian 13 (Bookworm)
+- **OS** : Debian 13
 - **RAM** : 16 Go
 - **vCPU** : 6 cœurs
 - **Stockage** : 150 Go
@@ -62,7 +63,7 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 
 **Portainer :** Similaire à Docker Desktop, Portainer me permet de gérer mes conteneurs Docker
 
-**Vaultwarden :** Gestionnaire de mots de passe hébergé
+**Vaultwarden :** Gestionnaire de mots de passe
 
 **NocoDB :** Tableur Excel-Like pour la gestion de mes budgets personnels
 
@@ -153,6 +154,7 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 ### Court terme
 - [ ] Créer des workflows n8n
 - [ ] Automatiser le déploiement du Homelab via Ansible (CF : Autre projet)
+- [ ] Faire des documentations des outils qui m'intéressent (PDF postable sur Linkedin histoire d'être un peu actif)
 
 ### Moyen terme
 - [ ] Mettre en place backups automatiques réguliers
@@ -160,9 +162,9 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 - [ ] Tester des outils dans des environnements isolés
 
 ### Long terme
-- [ ] Upgrade RAM à 12-16 Go si nécessaire
+- [ ] Upgrade RAM - Mon serveur Proxmox a 16Go de RAM actuellement
 - [ ] Ajouter une deuxième VM pour redondance
-- [ ] Home Assistant si achat objets connectés
+- [ ] Home Assistant le jour où j'ai des objets connectés
 
 ---
 
