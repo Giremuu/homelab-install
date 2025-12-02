@@ -128,6 +128,7 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 - [Homarr](https://homarr.dev/)
 - [Vaultwarden](https://github.com/dani-garcia/vaultwarden)
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma)
+- [Uptime Kuma - Slash-Root](https://slash-root.fr/421/)
 - [Portainer](https://www.portainer.io/)
 - [n8n](https://n8n.io/)
 - [Navidrome](https://www.navidrome.org/)
