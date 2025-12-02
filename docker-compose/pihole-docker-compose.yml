@@ -1,0 +1,16 @@
+# Named "docker-compose.yml"
+
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:6.3
+    ports:
+      - "xxxx:xxxx/tcp"
+      - "xxxx:xxxx/udp"
+      - "xxxx:xxxx/tcp"
+    environment:
+      TZ: 'Europe/Paris'
+    volumes:
+      - './etc-pihole:/etc/pihole'
+      - './etc-dnsmasq.d:/etc/dnsmasq.d'
+    restart: unless-stopped

@@ -1,0 +1,16 @@
+# Named "docker-compose.yml"
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    ports:
+      - "xxxx:xxxx"
+    environment:
+      WEBSOCKET_ENABLED: "true"
+      SIGNUPS_ALLOWED: "false"
+      ROCKET_TLS: 'xxx'
+    volumes:
+      - ./data:/data
+      - ./ssl:/ssl

@@ -1,0 +1,21 @@
+# Named "docker-compose.yml"
+
+services:
+  n8n:
+    image: n8nio/n8n:1.122.4
+    container_name: n8n
+    restart: unless-stopped
+    ports:
+      - "xxxx:xxxx"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=${N8N_USER} # .env pour ces variables
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_PASSWORD}
+      - GENERIC_TIMEZONE=Europe/Paris
+      - N8N_HOST=x.x.x.x
+      - N8N_PORT=xxxx
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://x.x.x.x:XXXX/
+      - N8N_SECURE_COOKIE=false
+    volumes:
+      - ./data:/home/node/.n8n

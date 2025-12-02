@@ -1,0 +1,13 @@
+# Named "docker-compose.yml"
+
+services:
+  nocodb:
+    image: nocodb/nocodb:0.265.1
+    container_name: nocodb
+    restart: unless-stopped
+    ports:
+      - "xxxx:xxxx"
+    volumes:
+      - ./data:/usr/app/data
+    environment:
+      - NC_AUTH_JWT_SECRET=${NC_JWT_SECRET}

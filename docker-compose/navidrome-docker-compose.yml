@@ -1,0 +1,18 @@
+# Named "docker-compose.yml"
+
+services:
+  navidrome:
+    image: deluan/navidrome:0.58.5
+    container_name: navidrome
+    user: xxxx:xxxx
+    ports:
+      - "xxxx:xxxx"
+    environment:
+      ND_SCANSCHEDULE: 1h
+      ND_LOGLEVEL: info
+      ND_SESSIONTIMEOUT: 24h
+      ND_BASEURL: ""
+    volumes:
+      - "./data:/data"
+      - "/home/dockers/nas/musique:/music:ro"
+    restart: unless-stopped

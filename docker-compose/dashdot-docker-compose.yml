@@ -1,0 +1,14 @@
+# Named "docker-compose.yml"
+
+services:
+  dash:
+    image: mauricenino/dashdot:6.2.0
+    container_name: dashdot
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - 'xxxx:xxxx'
+    volumes:
+      - /:/mnt/host:ro
+    environment:
+      DASHDOT_ENABLE_CPU_TEMPS: 'true'
