@@ -1,5 +1,3 @@
-# homelab-install
-
 # Mon Homelab
 
 Documentation complète de mon homelab privé.
