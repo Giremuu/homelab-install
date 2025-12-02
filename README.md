@@ -41,7 +41,7 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 
 ### Architecture
 
-![Schema Infra](image.png)
+![Schema Infra](image/schema-infra-homelab.png)
 
 ### Outils & Services
 
@@ -57,6 +57,8 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 **NAS - Synology**
 
 **Homarr :** Dashboard central personnalisable avec widgets pour centraliser l'accès à mes interfaces Web
+
+![Image Homarr](image/Homarr_screen.png)
 
 **Portainer :** Similaire à Docker Desktop, Portainer me permet de gérer mes conteneurs Docker
 
@@ -79,7 +81,7 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 
 ### Configuration Uptime Kuma :
 
-**J'ai configuré 8 monitors :**
+**J'ai configuré plusieurs monitors :**
 
 #### Services critiques 🔴
 
@@ -103,6 +105,9 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 | **Navidrome** | HTTP(s) | `http://x.x.x.x:XXXX` | 15 min | Down >1h |
 | **NocoDB** | HTTP(s) | `http://x.x.x.x:XXXX` | 15 min | Down >1h |
 | **Internet** | Ping | `1.1.1.1` | 10 min | Info (pas critique) |
+
+![Image Uptime Kuma](image/UpTimeKuma_screen.png)
+
 
 ### Notifications
 
@@ -134,10 +139,7 @@ Les fichiers docker-compose.yml seront publiés mais anonymisés
 ## Statistiques du projet
 
 **Date de création :** Octobre 2024
-**Temps d'installation total :** ~10 heures (apprentissage inclus)
-**Services déployés :** 9
-**Conteneurs Docker :** 9
-**Monitors actifs :** 9
+**Temps d'installation total :** ~8 heures (apprentissage inclus) pour l'installation (Dont 7h pour ce ReadME)
 **Utilisation ressources :**
 - RAM : ~4 Go / 8 Go
 - CPU : <20% en moyenne
@@ -171,7 +173,7 @@ Ce homelab est un projet d'apprentissage en plus d'être utile au quotidien. Si 
 - Des questions sur la configuration
 - Des idées de services à partager
 
-N'hésitez pas à ouvrir une **issue**, une **discussion** sur ce repo !
+N'hésitez pas à ouvrir une **issue** ou une **discussion** sur ce repo !
 
 
 *Dernière mise à jour : Novembre 2025*
