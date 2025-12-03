@@ -194,10 +194,14 @@ PORTAINER_PORT=9050
 ## Statistiques du projet
 
 **Date de création :** Octobre 2024
+
+
 **Utilisation ressources :**
 - RAM : ~4 Go / 8 Go
 - CPU : <20% en moyenne
 - Stockage : ~30 Go / 150 Go
+
+
 **Compétences développées :**
 - Virtualisation (Proxmox)
 - Conteneurisation (Docker & Docker Compose)
