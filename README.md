@@ -15,8 +15,8 @@ Documentation complète de mon homelab privé avec les configurations Docker Com
 
 - Héberger des services personnels de manière privée et sécurisée
 - Pratiquer Docker et Proxmox
-- Centraliser mes outils et services que j'utilise souvent
-- Zéro exposition sur Internet (Pas le besoin vis-à-vis de ma situation)
+- Centraliser les outils et services que j'utilise souvent
+- Zéro exposition sur Internet dans mon cas
 
 ### Principes de conception
 
@@ -102,8 +102,8 @@ PORTAINER_PORT=9050
 
 **Machine virtuelle principale :**
 - **OS** : Debian 13 (Bookworm)
-- **RAM** : 16 Go
-- **vCPU** : 6 cœurs
+- **RAM** : 8 Go
+- **vCPU** : 4 cœurs
 - **Stockage** : 150 Go
 - **Réseau** : Bridge Proxmox + VPN
 
@@ -183,7 +183,6 @@ PORTAINER_PORT=9050
 - [Vaultwarden](https://github.com/dani-garcia/vaultwarden)
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma)
 - [Uptime Kuma - Slash-Root](https://slash-root.fr/421/)
-- [Uptime Kuma - Slash-Root](https://slash-root.fr/421/)
 - [Portainer](https://www.portainer.io/)
 - [n8n](https://n8n.io/)
 - [Navidrome](https://www.navidrome.org/)
@@ -196,7 +195,7 @@ PORTAINER_PORT=9050
 
 **Date de création :** Octobre 2024
 **Utilisation ressources :**
-- RAM : ~4 Go / 16 Go
+- RAM : ~4 Go / 8 Go
 - CPU : <20% en moyenne
 - Stockage : ~30 Go / 150 Go
 **Compétences développées :**
