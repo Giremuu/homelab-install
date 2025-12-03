@@ -2,12 +2,12 @@
 
 services:
   dash:
-    image: mauricenino/dashdot:6.2.0
+    image: mauricenino/dashdot:${DASHDOT_VERSION}
     container_name: dashdot
     restart: unless-stopped
     privileged: true
     ports:
-      - 'xxxx:xxxx'
+      - '${DASHDOT_PORT}:3001'  # Port interne par défaut de Dashdot
     volumes:
       - /:/mnt/host:ro
     environment:

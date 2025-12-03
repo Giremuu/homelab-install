@@ -2,11 +2,11 @@
 
 services:
   navidrome:
-    image: deluan/navidrome:0.58.5
+    image: deluan/navidrome:${NAVIDROME_VERSION}
     container_name: navidrome
-    user: xxxx:xxxx
+    user: ${NAVIDROME_USER_UID}:${NAVIDROME_USER_GID}
     ports:
-      - "xxxx:xxxx"
+      - "${NAVIDROME_PORT}:4533"
     environment:
       ND_SCANSCHEDULE: 1h
       ND_LOGLEVEL: info
@@ -14,5 +14,5 @@ services:
       ND_BASEURL: ""
     volumes:
       - "./data:/data"
-      - "/home/dockers/nas/musique:/music:ro"
+      - "${NAVIDROME_MUSIC_PATH}:/music:ro"
     restart: unless-stopped

@@ -2,15 +2,15 @@
 
 services:
   vaultwarden:
-    image: vaultwarden/server:latest
+    image: vaultwarden/server:${VAULTWARDEN_VERSION}
     container_name: vaultwarden
     restart: unless-stopped
     ports:
-      - "xxxx:xxxx"
+      - "${VAULTWARDEN_PORT}:80"
+      - "${VAULTWARDEN_WEBSOCKET_PORT}:3012"
     environment:
       WEBSOCKET_ENABLED: "true"
       SIGNUPS_ALLOWED: "false"
-      ROCKET_TLS: 'xxx'
+      ADMIN_TOKEN: "${VAULTWARDEN_ADMIN_TOKEN}"
     volumes:
       - ./data:/data
-      - ./ssl:/ssl
