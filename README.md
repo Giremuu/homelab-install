@@ -30,16 +30,16 @@ Documentation complète de mon homelab privé avec les configurations Docker Com
 ## Déploiement
 
 ### Structure du repository
-
-homelab-install/
-> image
->> Illustrations...
-> docker-compose
->> Fichiers docker-compose.yml renommés pour chaque service
->> Fichier env-exemple qui est un fichier d'exemple pour les variables utilisés dans les docker-compose.yml
->> test-docker.sh qui est un script servant de vérifier la config et les ports de chaque docker-compose par rapport au fichier env
-> README.md
-
+```
+ homelab-install/
+     -> image
+         -> Illustrations...
+     -> docker-compose
+         -> Fichiers docker-compose.yml renommés pour chaque service
+         -> Fichier env-exemple qui est un fichier d'exemple pour les variables utilisés dans les docker-compose.yml
+         -> test-docker.sh qui est un script servant de vérifier la config et les ports de chaque docker-compose par rapport au fichier env
+     -> README.md
+```
 
 ### Configuration avec variables d'environnement
 
